@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Suma Números!</title>
+  </head>
+  <body>
+  	<h1>Mi cuenta es: <%= @counter %></h1>
+  	<form action="/increase" method="post">
+  	  <input type="hidden" name="add" value="<%= @counter %>">
+      <input type="submit" value="Suma!!">
+    </form>
+  </body>
+</html>
